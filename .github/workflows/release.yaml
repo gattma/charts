@@ -44,6 +44,14 @@ jobs:
           CR_PAGES_INDEX_PATH: docs/index.yaml
           CR_INDEX_PATH: docs/index.yaml
 
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: "go.mod"
+
+      - name: Generate Readme
+        run: go run ./cmd/index2md/ > docs/README.md
+
       - name: Commit changes
         run: |
           git add .
