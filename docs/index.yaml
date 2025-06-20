@@ -48,6 +48,29 @@ entries:
     - https://github.com/gattma/charts/releases/download/sealed-secrets-web-4.0.0/sealed-secrets-web-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v3
+    appVersion: v0.1.0-pre
+    created: "2025-06-20T11:02:23.637975182Z"
+    dependencies:
+    - name: dex
+      repository: https://charts.dexidp.io
+      version: 0.23.0
+    - name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 21.2.3
+    description: A web interface for Sealed Secrets by Bitnami.
+    digest: 2b39fb1a4235f7523ce0127f285f78921d957f373361c3c560b5a80090d77161
+    home: https://github.com/gattma/sealed-secrets-web.git
+    icon: https://raw.githubusercontent.com/gattma/sealed-secrets-web/master/assets/logo.png
+    maintainers:
+    - name: bakito
+      url: https://github.com/bakito
+    name: sealed-secrets-web
+    sources:
+    - https://github.com/gattma/sealed-secrets-web
+    urls:
+    - https://github.com/gattma/charts/releases/download/sealed-secrets-web-0.1.0-pre/sealed-secrets-web-0.1.0-pre.tgz
+    version: 0.1.0-pre
+  - apiVersion: v3
     appVersion: v0.1.0-alpha
     created: "2025-06-20T10:44:10.227950693Z"
     dependencies:
@@ -70,4 +93,4 @@ entries:
     urls:
     - https://github.com/gattma/charts/releases/download/sealed-secrets-web-0.1.0-alpha/sealed-secrets-web-0.1.0-alpha.tgz
     version: 0.1.0-alpha
-generated: "2025-06-20T10:44:10.227962535Z"
+generated: "2025-06-20T11:02:23.638022621Z"
